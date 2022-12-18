@@ -1,10 +1,9 @@
 package wargames;
 
 public enum CardName
-				{	/*
-				 	* Here we are setting up the names and values of the cards when we combine
-					 * these with out suits we will get a full card TWO(2, "Two"),
-					 */
+{
+	  // Here we set the Name and Value of the cards
+    TWO(2, "Two"),
     THREE(3, "Three"),
     FOUR(4, "Four"),
     FIVE(5, "Five"),

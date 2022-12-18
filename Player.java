@@ -6,7 +6,6 @@ import java.util.Set;
 public class Player {
 	
 	// here we setup our players with a name score and a hand
-	public Card za;
 	private String name = "";
 	private int score = 0;
 	private Deck deck;
@@ -38,24 +37,24 @@ public class Player {
 	        return  name ;
 	                
 	    }
-
+	    	// our get score setter
 		public int getScore() {
 			return score;
 		}
-
+					// way we set the score +1
 		public void setScore() {
 			this.score += 1;
 		}
-
+				// our players flip command
 		public Card Flip() {
 			
 			return hand.remove(0);
 		}
-	
+				// how we tell how much the card is worth
 		public int getCardValue( int i) {
 			return cardValue.get(i);
 		}
-
+					// and this is how we add to the players hand
 		public void Draw(Card card) {
 			hand.add(card);
 		}
